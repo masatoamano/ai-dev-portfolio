@@ -16,7 +16,7 @@ https://udify.app/chat/2QqYFYd1MorRjoHf
 | モデル | LLM：claude-haiku-4-5（Anthropic）／ 埋め込み：gemini-embedding-001（Google）／ Rerankなし |
 | ナレッジ | faq-source.md を1問1チャンクで登録（区切り `###`、最大300文字） |
 | faq-source.md | ボットの知識源（FAQ資料） |
-| test-results.md | 想定質問のテスト結果（25/50件実施） |
+| test-results.md | 想定質問のテスト結果（50件実施） |
 | demo.mp4 | 60〜90秒の操作動画（作成予定） |
 
 ## 使い方
@@ -34,5 +34,6 @@ https://udify.app/chat/2QqYFYd1MorRjoHf
 - [x] ナレッジ登録・ボット組み立て・公開
 - [x] FAQ資料 30問
 - [x] テスト 25件（資料内正答率100%）
-- [ ] テスト 50件・修正
+- [x] テスト 50件（要修正1件）
+- [x] 要修正箇所の修正・再テスト（全件解消）
 - [ ] 操作動画・README仕上げ
