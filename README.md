@@ -15,7 +15,7 @@ AI駆動開発の実績をまとめたポートフォリオです。
 | 1 | FAQチャットボット | Difyで構築した架空バイクショップのFAQボット | [公開チャットボット](https://udify.app/chat/2QqYFYd1MorRjoHf) / [詳細](./01-faq-chatbot/) | 最終テスト50問すべて基準達成 |
 | 2 | モトリンク福岡 LP | 架空のバイクショップ向けレスポンシブLP。店舗紹介・バイク選び・点検整備・FAQ・Dify AIチャットボットへの導線 | [公開LP](https://masatoamano.github.io/ai-dev-portfolio/lp-motolink/) | PC・スマートフォンでの表示とチャット画面への遷移をユーザー確認済み |
 | 3 | AI出力の検証・改善レポート | FAQボットの50問テストと7問の再テスト記録を分析。重大度基準・改善前後・残課題を整理 | [レポート](./03-verification-report/) | 既存記録に基づくレポート作成済み |
-| 4 | 小さな業務自動化ツール | サンプル入出力・エラーケース付き | 04-automation-tool | 未着手 |
+| 4 | 売上データ自動集計ツール | CSV・Excelの検証、月別・商品別・全体売上の集計、Excel出力 | [詳細・Windows実行手順](./04-automation-tool/) / [出力例](./04-automation-tool/examples/sales_summary.xlsx) | 実装・自動テスト・サンプル出力確認済み |
 
 ## 進め方
 - 毎日：学習20分 / 制作80分 / 動作確認と作業ログ20分
@@ -73,3 +73,11 @@ Dify / Claude Haiku 4.5 / Gemini Embedding / RAG（検索拡張生成）
 - 成果物：[AI出力の検証・改善レポート](./03-verification-report/)
 - 根拠：既存のテスト結果・FAQ資料・開発記録・検証チェックリスト・Gitの変更履歴
 - 今回は資料調査と分析を行い、ボットのテストは再実行していません。
+
+## 制作実績④：売上データ自動集計ツール
+
+中小企業・個人事業主向けに、CSV（UTF-8・Shift_JIS系）やExcelの売上明細を検証し、月別・商品別・全体売上をExcelに出力するPythonツールです。Decimalによる金額計算、行番号付きのエラー案内、入力・既存ファイルの上書き防止を実装しています。外部API・有料サービス・APIキーは不要です。
+
+- [プログラム・架空サンプル・Windows向け手順](./04-automation-tool/)
+- [Excel出力例](./04-automation-tool/examples/sales_summary.xlsx) / [テスト結果と検証範囲](./04-automation-tool/TEST_RESULTS.md)
+- 作業時間の削減率は未測定です。Windows実機・Microsoft Excelでの確認は未実施です。
